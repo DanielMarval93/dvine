@@ -1,3 +1,5 @@
+
+
 .ui.inverted.vertical.center.aligned.segment {
   background: url("./antique-gf87bb1c30_1920.jpg");
   background-size: 100%;
@@ -8,6 +10,12 @@
   background-color: black;
     margin: auto;
 }
+
+@media (max-width:700px){
+    .ui.inverted.vertical.center.aligned.segment{
+        background-size: 230%;
+    }
+    }
 
 .gradient {
   background: rgb(2, 0, 36);

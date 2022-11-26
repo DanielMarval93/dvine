@@ -202,10 +202,13 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: "8em 0em" }} vertical>
+    <Segment style={{ padding: "6em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={16}>
+            <Header as="h1" style={{ fontSize: "2.6em", textAlign: 'center',  padding: "0em 0em 0.8em 0em"  }}>
+              Acerca de nosotros
+            </Header>
             <Image
               bordered
               rounded
@@ -239,7 +242,7 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-
+    
     <Segment style={{ padding: "0em" }} vertical>
       <Grid celled="internally" columns="equal" stackable>
       <Grid.Row textAlign="center">

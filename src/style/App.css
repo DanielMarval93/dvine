@@ -1,11 +1,12 @@
 .ui.inverted.vertical.center.aligned.segment {
   background: url("./antique-gf87bb1c30_1920.jpg");
-  background-size: 80%;
-  background-position-x: center;
+  background-size: 100%;
+  background-position: center;
   color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: black;
+    margin: auto;
 }
 
 .gradient {

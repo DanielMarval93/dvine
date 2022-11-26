@@ -158,7 +158,7 @@ class MobileContainer extends Component {
             <Segment
               inverted
               textAlign="center"
-              style={{ minHeight: 350, padding: "1em 0em" }}
+              style={{ minHeight: 550, padding: "1em 0em" }}
               vertical
             >
               <Container>
@@ -244,18 +244,18 @@ const HomepageLayout = () => (
       <Grid celled="internally" columns="equal" stackable>
       <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" floated/>
+              <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/ulFiruB.jpg" floated/>
+              <Image bordered rounded src="https://i.imgur.com/ulFiruB.jpg" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" floated/>
+              <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/fE6mEw7.jpg" floated style={{ margin:'0px auto'}}/>
+              <Image bordered rounded src="https://i.imgur.com/fE6mEw7.jpg" style={{ margin:'0px auto'}}/>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -291,7 +291,7 @@ const HomepageLayout = () => (
           and combinatory DNA research, but our bananas can really dance.
         </p>
       </Container>
-      <Image src="https://i.imgur.com/n4B2ntK.jpg" floated/>
+      <Image src="https://i.imgur.com/n4B2ntK.jpg" />
     </Segment>
 
     <Segment inverted vertical style={{ padding: "5em 0em" }}>

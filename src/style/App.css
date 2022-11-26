@@ -15,10 +15,8 @@
     rgba(207, 160, 18, 1) 51%,
     rgba(3, 3, 0, 1) 93%
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .ui.image.logo{  height: 8em;
-    
     background-size: cover;}

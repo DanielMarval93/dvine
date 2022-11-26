@@ -258,11 +258,6 @@ const HomepageLayout = () => (
               <Image bordered rounded src="https://i.imgur.com/fE6mEw7.jpg" floated style={{ margin:'0px auto'}}/>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/XKAf2XN.jpg" size="big" style={{ margin:'0px auto'}}/>
-          </Grid.Column>
-        </Grid.Row>
       </Grid>
     </Segment>
 

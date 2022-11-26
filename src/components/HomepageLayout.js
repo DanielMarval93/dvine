@@ -210,6 +210,7 @@ const HomepageLayout = () => (
               Acerca de nosotros
             </Header>
             <Image
+              className="aboutUsImage"
               bordered
               rounded
               size="big"

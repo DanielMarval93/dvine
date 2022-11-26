@@ -11,17 +11,7 @@
     margin: auto;
 }
 
-@media (max-width:700px){
-    .ui.inverted.vertical.center.aligned.segment{
-        background-size: 330%;
-        background-position: center;
-        color: black;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-color: black;
-          margin: auto;
-    }
-    }
+
 
 .gradient {
   background: rgb(2, 0, 36);

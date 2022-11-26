@@ -4,7 +4,7 @@
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import CardCarousel from "./CardCarousel";
+
 import {
   Container,
   Divider,

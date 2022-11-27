@@ -11,10 +11,11 @@ import {
   FaUserTie,
   FaCamera,
   FaFilm,
+  FaRegEnvelope,
+  FaPhone
 } from "react-icons/fa";
 
 import {
-  Button,
   Container,
   Divider,
   Grid,
@@ -66,13 +67,13 @@ const HomepageHeading = ({ mobile }) => (
         fontFamily: "LEMONMILK-Light",
       }}
     />
-    <Button
+    {/*<Button
       style={{
         marginTop: mobile ? "0.6em" : "1em",
       }}
     >
-      SUPER SAD AJKLADA
-    </Button>
+      Conocenos
+    </Button>*/}
   </Container>
 );
 
@@ -295,9 +296,14 @@ const HomepageLayout = () => (
 
     <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
       <Container text>
-        <Header as="h3" style={{ fontSize: "2em", textAlign:"center",paddingBottom:"1.5em" }}>
-          Servicios
-        </Header>
+      <Divider
+          as="h3"
+          className="header"
+          horizontal
+          style={{ margin: "0em 0em 3em", textTransform: "uppercase" }}
+        >
+          <p>Servicios</p>
+        </Divider>
 
         <Grid
           container
@@ -313,7 +319,7 @@ const HomepageLayout = () => (
               >
                 Marca
               </Header>
-              <FaCrown/>
+              <FaCrown size='2em'/>
               <p style={{ fontSize: "1.33em" }}>
                 Creacion y gestion de la marca personal.
               </p>
@@ -325,7 +331,7 @@ const HomepageLayout = () => (
               >
                 Marketing
               </Header>
-              <FaChartLine />
+              <FaChartLine size='2em'/>
               <p style={{ fontSize: "1.33em" }}>
                 Marketing en redes sociales y aumento de notoriedad
               </p>
@@ -337,7 +343,7 @@ const HomepageLayout = () => (
               >
                 Gestoria
               </Header>
-              <FaUserTie/>
+              <FaUserTie size='2em'/>
               <p style={{ fontSize: "1.33em" }}>
                 Asesoramiento y acompanamiento gestor.
               </p>
@@ -351,7 +357,7 @@ const HomepageLayout = () => (
               >
                 Fotografia
               </Header>
-              <FaCamera/>
+              <FaCamera size='2em'/>
               <p style={{ fontSize: "1.33em" }}>
                 Sesiones de fotografia con fotografos profeisonales en exterios
                 y estudio.
@@ -364,7 +370,7 @@ const HomepageLayout = () => (
               >
                 Video
               </Header>
-              <FaFilm/>
+              <FaFilm size='2em'/>
               <p style={{ fontSize: "1.33em" }}>
                 Rodajes con filmmakers profesionales para producciones en video.
               </p>
@@ -372,7 +378,7 @@ const HomepageLayout = () => (
           </Grid.Row>
         </Grid>
         <Divider
-          as="h4"
+          as="h3"
           className="header"
           horizontal
           style={{ margin: "3em 0em", textTransform: "uppercase" }}
@@ -381,7 +387,7 @@ const HomepageLayout = () => (
         </Divider>
 
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Did We Tell You About Our Bananas?
+          Quieres ser parte de nuestro equipo?
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           Buscamos perfil entre 18 y 50 anos sin importar nacionalidad. Modelos
@@ -399,29 +405,10 @@ const HomepageLayout = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Contacto" />
               <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us <FaInstagram/></List.Item>
-                <List.Item as="a">Religious Ceremonies</List.Item>
-                <List.Item as="a">Gazebo Plans</List.Item>
+                <List.Item as="a"><FaRegEnvelope/> info@dvinemodels.com</List.Item>
+                <List.Item as="a"><FaInstagram/> @dvinemodels</List.Item>
+                <List.Item as="a"><FaPhone/> (+34) 613 56 53 98</List.Item>
               </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Redes" />
-              <List link inverted>
-                <List.Item as="a">Banana Pre-Order</List.Item>
-                <List.Item as="a">DNA FAQ</List.Item>
-                <List.Item as="a">How To Access</List.Item>
-                <List.Item as="a">Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

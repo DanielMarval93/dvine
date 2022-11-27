@@ -12,7 +12,7 @@ import {
   FaCamera,
   FaFilm,
   FaRegEnvelope,
-  FaPhone
+  FaPhone,
 } from "react-icons/fa";
 
 import {
@@ -43,17 +43,13 @@ const { MediaContextProvider, Media } = createMedia({
  */
 const HomepageHeading = ({ mobile }) => (
   <Container text>
-    <Header
-      className="gradient"
-      as="h1"
-      content="Dvine Models"
-      inverted
+    <Image
+      className="logo"
+      src="https://i.imgur.com/0K4iZGu.png"
       style={{
-        fontSize: mobile ? "4em" : "8em",
-        fontWeight: "normal",
-        marginBottom: 0,
-        marginTop: mobile ? "0.9em" : "0.55em",
-        fontFamily: "australiaCustom",
+        margin: "auto",
+        marginTop: mobile ? "4.45em" : "7em",
+        maxHeight: mobile ? "5em" : "20em",
       }}
     />
     <Header
@@ -105,26 +101,29 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 700, padding: "1em 0em" }}
+            style={{ minHeight: 600, padding: "1em 0em" }}
             vertical
           >
             <Menu
               fixed={fixed ? "top" : null}
-              inverted={!fixed}
+              inverted={true}
               pointing={!fixed}
               secondary={!fixed}
               size="large"
             >
               <Container>
-                <Menu.Item as="a" active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as="a">About Us</Menu.Item>
-                <Menu.Item as="a">Gallery</Menu.Item>
-                <Menu.Item as="a">Services</Menu.Item>
-                <Menu.Item as="a">Contact</Menu.Item>
-                <Menu.Item position="right">
-                  {/*                <Image className='logo' src='https://i.imgur.com/JnmIas6.png' /> */}{" "}
+                <Image
+                  src="https://i.imgur.com/0K4iZGu.png"
+                  style={{ maxHeight: "2.6em", margin: "0.5em" }}
+                />
+                <Menu.Item position="right" style={{ padding: "0px" }}>
+                  <Menu.Item as="a" active>
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a">About Us</Menu.Item>
+                  <Menu.Item as="a">Gallery</Menu.Item>
+                  <Menu.Item as="a">Services</Menu.Item>
+                  <Menu.Item as="a">Contact</Menu.Item>
                 </Menu.Item>
               </Container>
             </Menu>
@@ -279,15 +278,15 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" />
+          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em"}}>
+            <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" style={{maxHeight:'35em', margin:'auto'}} />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
             <Image
               bordered
               rounded
               src="https://i.imgur.com/fE6mEw7.jpg"
-              style={{ margin: "0px auto" }}
+              style={{maxHeight:'35em', margin:'auto'}}
             />
           </Grid.Column>
         </Grid.Row>
@@ -296,7 +295,7 @@ const HomepageLayout = () => (
 
     <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
       <Container text>
-      <Divider
+        <Divider
           as="h3"
           className="header"
           horizontal
@@ -319,7 +318,7 @@ const HomepageLayout = () => (
               >
                 Marca
               </Header>
-              <FaCrown size='2em'/>
+              <FaCrown size="2em" />
               <p style={{ fontSize: "1.33em" }}>
                 Creacion y gestion de la marca personal.
               </p>
@@ -331,7 +330,7 @@ const HomepageLayout = () => (
               >
                 Marketing
               </Header>
-              <FaChartLine size='2em'/>
+              <FaChartLine size="2em" />
               <p style={{ fontSize: "1.33em" }}>
                 Marketing en redes sociales y aumento de notoriedad
               </p>
@@ -343,7 +342,7 @@ const HomepageLayout = () => (
               >
                 Gestoria
               </Header>
-              <FaUserTie size='2em'/>
+              <FaUserTie size="2em" />
               <p style={{ fontSize: "1.33em" }}>
                 Asesoramiento y acompanamiento gestor.
               </p>
@@ -357,7 +356,7 @@ const HomepageLayout = () => (
               >
                 Fotografia
               </Header>
-              <FaCamera size='2em'/>
+              <FaCamera size="2em" />
               <p style={{ fontSize: "1.33em" }}>
                 Sesiones de fotografia con fotografos profeisonales en exterios
                 y estudio.
@@ -370,7 +369,7 @@ const HomepageLayout = () => (
               >
                 Video
               </Header>
-              <FaFilm size='2em'/>
+              <FaFilm size="2em" />
               <p style={{ fontSize: "1.33em" }}>
                 Rodajes con filmmakers profesionales para producciones en video.
               </p>
@@ -402,12 +401,18 @@ const HomepageLayout = () => (
         <Grid divided inverted stackable>
           <Grid.Row></Grid.Row>
           <Grid.Row>
-            <Grid.Column width={6} centered style={{textAlign:'center'}} >
-              <Header inverted as="h4" content="Contacto" />
-              <List link inverted>
-                <List.Item as="a"><FaRegEnvelope/> info@dvinemodels.com</List.Item>
-                <List.Item as="a"><FaInstagram/> @dvinemodels</List.Item>
-                <List.Item as="a"><FaPhone/> (+34) 613 56 53 98</List.Item>
+            <Grid.Column  centered style={{ textAlign: "center" }}>
+              <Header inverted as="h2" content="Contacto" />
+              <List link inverted style={{fontSize:"1.33em"}}>
+                <List.Item as="a">
+                  <FaRegEnvelope size="1.33em"/>  info@dvinemodels.com
+                </List.Item>
+                <List.Item as="a">
+                  <FaInstagram size="1.33em"/>  @dvinemodels
+                </List.Item>
+                <List.Item as="a">
+                  <FaPhone size="1.33em"/>  (+34) 613 56 53 98
+                </List.Item>
               </List>
             </Grid.Column>
           </Grid.Row>

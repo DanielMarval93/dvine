@@ -8,19 +8,36 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: black;
+  
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@font-face {
+  font-family: 'australiaCustom';
+  src: local('australiaCustom'), url(./australiaCustom.ttf) format('truetype');
+}
 
+@font-face {
+  font-family: 'LEMONMILK-Light';
+  src: local('LEMONMILK-Light'), url(./LEMONMILK-Light.otf) format('truetype');
+}
 
+.ui.bordered.rounded.image{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ui.big.rounded.right.floated.image.aboutUsImage{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 .gradient {
   background: rgb(2, 0, 36);
   background: -webkit-linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
+    rgb(155, 94, 15) 0%,
     rgba(130, 112, 17, 1) 31%,
     rgba(207, 160, 18, 1) 51%,
-    rgba(3, 3, 0, 1) 93%
+    rgb(235, 206, 64) 93%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

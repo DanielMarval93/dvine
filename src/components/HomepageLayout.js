@@ -27,6 +27,7 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
+
 /* Heads up!
  * HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled
  * components for such things.
@@ -39,20 +40,22 @@ const HomepageHeading = ({ mobile }) => (
       content="Dvine Models"
       inverted
       style={{
-        fontSize: mobile ? "2em" : "4em",
+        fontSize: mobile ? "4em" : "8em",
         fontWeight: "normal",
         marginBottom: 0,
-        marginTop: mobile ? "1.5em" : "3em",
+        marginTop: mobile ? "1.5em" : "0.45em",
+        fontFamily: 'australiaCustom'
       }}
     />
     <Header
-      as="h2"
-      content="Agency and Management"
+      as="h3"
+      content="Agency & Management"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
         fontWeight: "normal",
         marginTop: mobile ? "0.5em" : "1.5em",
+        fontFamily: 'LEMONMILK-Light'
       }}
     />
   </Container>
@@ -211,7 +214,6 @@ const HomepageLayout = () => (
             </Header>
             <Image
               className="aboutUsImage"
-              bordered
               rounded
               size="big"
               src="https://i.imgur.com/Plp71HY.jpeg"

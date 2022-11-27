@@ -402,7 +402,7 @@ const HomepageLayout = () => (
         <Grid divided inverted stackable>
           <Grid.Row></Grid.Row>
           <Grid.Row>
-            <Grid.Column width={6} centered >
+            <Grid.Column width={6} centered style={{textAlign:'center'}} >
               <Header inverted as="h4" content="Contacto" />
               <List link inverted>
                 <List.Item as="a"><FaRegEnvelope/> info@dvinemodels.com</List.Item>

@@ -4,8 +4,17 @@
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import {
+  FaChartLine,
+  FaInstagram,
+  FaCrown,
+  FaUserTie,
+  FaCamera,
+  FaFilm,
+} from "react-icons/fa";
 
 import {
+  Button,
   Container,
   Divider,
   Grid,
@@ -27,7 +36,6 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
-
 /* Heads up!
  * HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled
  * components for such things.
@@ -43,8 +51,8 @@ const HomepageHeading = ({ mobile }) => (
         fontSize: mobile ? "4em" : "8em",
         fontWeight: "normal",
         marginBottom: 0,
-        marginTop: mobile ? "1.5em" : "0.45em",
-        fontFamily: 'australiaCustom'
+        marginTop: mobile ? "0.9em" : "0.55em",
+        fontFamily: "australiaCustom",
       }}
     />
     <Header
@@ -52,12 +60,19 @@ const HomepageHeading = ({ mobile }) => (
       content="Agency & Management"
       inverted
       style={{
-        fontSize: mobile ? "1.5em" : "1.7em",
+        fontSize: mobile ? "1.2em" : "2.0em",
         fontWeight: "normal",
-        marginTop: mobile ? "0.5em" : "1.5em",
-        fontFamily: 'LEMONMILK-Light'
+        marginTop: mobile ? "0.5em" : "0.8em",
+        fontFamily: "LEMONMILK-Light",
       }}
     />
+    <Button
+      style={{
+        marginTop: mobile ? "0.6em" : "1em",
+      }}
+    >
+      SUPER SAD AJKLADA
+    </Button>
   </Container>
 );
 
@@ -169,8 +184,7 @@ class MobileContainer extends Component {
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name="sidebar" />
                   </Menu.Item>
-                  <Menu.Item position="right">
-                  </Menu.Item>
+                  <Menu.Item position="right"></Menu.Item>
                 </Menu>
               </Container>
               <HomepageHeading mobile />
@@ -209,8 +223,15 @@ const HomepageLayout = () => (
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={16}>
-            <Header as="h1" style={{ fontSize: "2.6em", textAlign: 'center',  padding: "0em 0em 0.8em 0em"  }}>
-              Acerca de nosotros
+            <Header
+              as="h1"
+              style={{
+                fontSize: "2.6em",
+                textAlign: "center",
+                padding: "0em 0em 0.8em 0em",
+              }}
+            >
+              A cerca de nosotros
             </Header>
             <Image
               className="aboutUsImage"
@@ -245,56 +266,126 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    
+
     <Segment style={{ padding: "0em" }} vertical>
       <Grid celled="internally" columns="equal" stackable>
-      <Grid.Row textAlign="center">
+        <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" />
+            <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/ulFiruB.jpg" />
+            <Image bordered rounded src="https://i.imgur.com/ulFiruB.jpg" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" />
+            <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-              <Image bordered rounded src="https://i.imgur.com/fE6mEw7.jpg" style={{ margin:'0px auto'}}/>
+            <Image
+              bordered
+              rounded
+              src="https://i.imgur.com/fE6mEw7.jpg"
+              style={{ margin: "0px auto" }}
+            />
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: "8em 0em 0em 0em" }} vertical>
+    <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
       <Container text>
-        <Header as="h3" style={{ fontSize: "2em" }}>
+        <Header as="h3" style={{ fontSize: "2em", textAlign:"center",paddingBottom:"1.5em" }}>
           Servicios
         </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Instead of focusing on content creation and hard work, we have learned
-          how to master the art of doing nothing by providing massive amounts of
-          whitespace and generic content that can seem massive, monolithic and
-          worth your attention.
-        </p>
 
+        <Grid
+          container
+          columns="equal"
+          stackable
+          style={{ textAlign: "center" }}
+        >
+          <Grid.Row>
+            <Grid.Column>
+              <Header
+                as="h4"
+                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
+              >
+                Marca
+              </Header>
+              <FaCrown/>
+              <p style={{ fontSize: "1.33em" }}>
+                Creacion y gestion de la marca personal.
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Header
+                as="h4"
+                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
+              >
+                Marketing
+              </Header>
+              <FaChartLine />
+              <p style={{ fontSize: "1.33em" }}>
+                Marketing en redes sociales y aumento de notoriedad
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Header
+                as="h4"
+                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
+              >
+                Gestoria
+              </Header>
+              <FaUserTie/>
+              <p style={{ fontSize: "1.33em" }}>
+                Asesoramiento y acompanamiento gestor.
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <Header
+                as="h4"
+                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
+              >
+                Fotografia
+              </Header>
+              <FaCamera/>
+              <p style={{ fontSize: "1.33em" }}>
+                Sesiones de fotografia con fotografos profeisonales en exterios
+                y estudio.
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Header
+                as="h4"
+                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
+              >
+                Video
+              </Header>
+              <FaFilm/>
+              <p style={{ fontSize: "1.33em" }}>
+                Rodajes con filmmakers profesionales para producciones en video.
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
         <Divider
           as="h4"
           className="header"
           horizontal
           style={{ margin: "3em 0em", textTransform: "uppercase" }}
         >
-          <p >Case Studies</p>
+          <p>Unete a Nosotros</p>
         </Divider>
 
         <Header as="h3" style={{ fontSize: "2em" }}>
           Did We Tell You About Our Bananas?
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur
-          filler content, but it's really true. It took years of gene splicing
-          and combinatory DNA research, but our bananas can really dance.
+          Buscamos perfil entre 18 y 50 anos sin importar nacionalidad. Modelos
+          comprometidas y con ganas de ganar ingresos altos.
         </p>
       </Container>
       <Image src="https://i.imgur.com/n4B2ntK.jpg" />
@@ -303,14 +394,13 @@ const HomepageLayout = () => (
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
       <Container>
         <Grid divided inverted stackable>
-         <Grid.Row>
-          </Grid.Row>
+          <Grid.Row></Grid.Row>
           <Grid.Row>
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Contacto" />
               <List link inverted>
                 <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
+                <List.Item as="a">Contact Us <FaInstagram/></List.Item>
                 <List.Item as="a">Religious Ceremonies</List.Item>
                 <List.Item as="a">Gazebo Plans</List.Item>
               </List>

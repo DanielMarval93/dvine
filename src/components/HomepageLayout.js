@@ -41,7 +41,7 @@ const HomepageHeading = ({ mobile }) => (
       src="https://i.imgur.com/0K4iZGu.png"
       style={{
         margin: "auto",
-        marginTop: mobile ? "8.6em" : "8.4em",
+        marginTop: mobile ? "8.6em" : "12.4em",
         maxHeight: mobile ? "5em" : "20em",
       }}
     />

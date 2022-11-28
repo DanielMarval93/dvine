@@ -65,7 +65,7 @@ const Services = () => {
                 </p>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
+            <Grid.Row style={{padding:"1em 0em 0em 0em"}}>
               <Grid.Column>
                 <Header
                   as="h4"

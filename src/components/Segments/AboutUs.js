@@ -3,7 +3,7 @@ import { Divider, Segment, Grid, Header, Image } from "semantic-ui-react";
 const AboutUs = () => {
   return (
     <div>
-      <Segment style={{ padding: "6.7em 0em 2em" }} vertical>
+      <Segment style={{ padding: "6.7em 0em 0em" }} vertical>
         <Divider
           as="h2"
           className="header"
@@ -13,8 +13,19 @@ const AboutUs = () => {
           <p>Acerca de nosotros</p>
         </Divider>
         <Grid container centered stackable verticalAlign="middle">
-          <Grid.Row>
-            <Grid.Column width={10}>
+        <Grid.Row>
+            <Grid.Column width={12}>
+              <Image
+                className="aboutUsImage"
+                rounded
+                size="big"
+                centered
+                src="https://i.imgur.com/Plp71HY.jpeg"
+              />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row divided>
+            <Grid.Column width={8}>
               <Header
                 as="h3"
                 style={{
@@ -41,20 +52,7 @@ const AboutUs = () => {
                 las cuentas y la marca personal de cada modelo.
               </p>
             </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <Image
-                className="aboutUsImage"
-                rounded
-                size="big"
-                centered
-                src="https://i.imgur.com/Plp71HY.jpeg"
-              />
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column width={10}>
+            <Grid.Column width={8}>
               <Header
                 as="h3"
                 style={{

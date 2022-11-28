@@ -10,7 +10,7 @@ import {
 const Services = () => {
   return (
     <div>
-      <Segment style={{ padding: "2em 0em 0em 0em" }} vertical>
+      <Segment style={{ padding: "1em 0em 0em 0em" }} vertical>
         <Container text>
           <Divider
             as="h2"

@@ -18,8 +18,9 @@ const JoinUs = () => {
             as="h3"
             style={{
               fontSize: "1.5em",
-              margin: "1em 2.5em",
+              margin: "1em 1em",
               textAlign: "center",
+              color: "rgba(207, 160, 18, 1)"
             }}
           >
             ¿Quieres ser parte de nuestro equipo?

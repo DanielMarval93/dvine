@@ -6,7 +6,8 @@ import {
   Grid,
   Image,
 } from "semantic-ui-react";
-import { FaInstagram, FaRegEnvelope, FaPhone } from "react-icons/fa";
+import { FaInstagram, FaRegEnvelope } from "react-icons/fa";
+import { SlPhone } from "react-icons/sl"
 
 const Contact = () => {
   return (
@@ -50,14 +51,14 @@ const Contact = () => {
               <Grid.Column width={5} centered style={{ textAlign: "center" }}>
                 <List link style={{ fontSize: "0.9em" }}>
                   <List.Item  style={{ color: "rgba(207, 160, 18, 1)" }}>
-                    <FaPhone size="3.3em" /> <br /> (+34) 613 56 53 98
+                    <SlPhone size="3.3em" /> <br /> (+34) 613 56 53 98
                   </List.Item>
                 </List>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Container>
-        <Image src="https://i.imgur.com/n4B2ntK.jpg" />
+        <Image src="https://i.imgur.com/vGf9MDu.jpg" />
       </Segment>
     </div>
   );

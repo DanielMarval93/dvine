@@ -149,7 +149,7 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state;
 
     return (
-      <Media as={Sidebar.Pushable} at="mobile">
+      <Media as={Sidebar.Pushable} at="mobile" fixed="top">
         <Sidebar.Pushable>
           <Sidebar
             as={Menu}

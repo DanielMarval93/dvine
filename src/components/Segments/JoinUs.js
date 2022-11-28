@@ -1,9 +1,9 @@
 import { Divider, Segment, Container, Header } from "semantic-ui-react";
 
-const JoinUs = () =>{
-    return(
-      <div>
-          <Segment style={{ padding: "1em 0em 0em 0em" }} vertical>
+const JoinUs = () => {
+  return (
+    <div>
+      <Segment style={{ padding: "1em 0em 0em 0em" }} vertical>
         <Container text>
           <Divider
             as="h2"
@@ -13,23 +13,31 @@ const JoinUs = () =>{
           >
             <p>Unete a Nosotros</p>
           </Divider>
-  
-          <Header as="h3" style={{  fontSize: "1.5em",
-                    margin: "1em 2.5em",
-                    textAlign: "center"}}>
+
+          <Header
+            as="h3"
+            style={{
+              fontSize: "1.5em",
+              margin: "1em 2.5em",
+              textAlign: "center",
+            }}
+          >
             ¿Quieres ser parte de nuestro equipo?
           </Header>
-          <p style={{ fontSize: "1.33em",
-                    margin: "1em 3em",
-                    textAlign: "center"
-                    }}>
-            Buscamos perfil entre 18 y 50 años sin importar nacionalidad. 
+          <p
+            style={{
+              fontSize: "1.33em",
+              margin: "1em 3em",
+              textAlign: "center",
+            }}
+          >
+            Buscamos perfil entre 18 y 50 años sin importar nacionalidad.
             Modelos comprometidas y con ganas de ganar ingresos altos.
           </p>
         </Container>
       </Segment>
-      </div>
-    )
-  }
+    </div>
+  );
+};
 
-  export default JoinUs;
+export default JoinUs;

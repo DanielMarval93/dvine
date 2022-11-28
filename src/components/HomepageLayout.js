@@ -77,7 +77,6 @@ HomepageHeading.propTypes = {
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-
   state = {};
 
   hideFixedMenu = () => this.setState({ fixed: false });
@@ -101,11 +100,12 @@ class DesktopContainer extends Component {
             vertical
           >
             <Menu
-              fixed={fixed ? "top" : null}
+              fixed={"top"}
               inverted={true}
               pointing={!fixed}
               secondary={!fixed}
               size="large"
+              style={{ backgroundColor: "black" }}
             >
               <Container>
                 <Image
@@ -182,11 +182,10 @@ class MobileContainer extends Component {
                   secondary
                   fixed="top"
                   size="large"
-                  style={{ backgroundColor: "black",
-                          }}
+                  style={{ backgroundColor: "black" }}
                 >
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar"/>
+                    <Icon name="sidebar" />
                   </Menu.Item>
                   <Menu.Item position="right">
                     <Image
@@ -226,15 +225,13 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 };
 
-
 const HomepageLayout = () => (
-  
   <ResponsiveContainer>
     <AboutUs />
-    <Gallery/>
+    <Gallery />
     <Services />
-    <JoinUs/>
-    <Contact/>
+    <JoinUs />
+    <Contact />
   </ResponsiveContainer>
 );
 

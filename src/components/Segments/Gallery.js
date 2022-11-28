@@ -1,9 +1,9 @@
 import { Divider, Segment, Grid, Image } from "semantic-ui-react";
 
 const Gallery = () => {
-    return (
-      <div>
-        <Segment style={{ padding: "0em" }} vertical>
+  return (
+    <div>
+      <Segment style={{ padding: "0em" }} vertical>
         <Divider
           as="h2"
           className="header"
@@ -41,9 +41,8 @@ const Gallery = () => {
           </Grid.Row>
         </Grid>
       </Segment>
-  
-      </div>
-    )
-  }
+    </div>
+  );
+};
 
-  export default Gallery
+export default Gallery;

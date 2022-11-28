@@ -1,17 +1,16 @@
 import { Divider, Segment, Grid, Container, Header } from "semantic-ui-react";
 import {
-    FaChartLine,
-    FaCrown,
-    FaUserTie,
-    FaCamera,
-    FaFilm,
-  } from "react-icons/fa";
+  FaChartLine,
+  FaCrown,
+  FaUserTie,
+  FaCamera,
+  FaFilm,
+} from "react-icons/fa";
 
-
-const Services = () =>{
-    return(
-      <div>
-        <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
+const Services = () => {
+  return (
+    <div>
+      <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
         <Container text>
           <Divider
             as="h2"
@@ -21,7 +20,7 @@ const Services = () =>{
           >
             <p>Servicios</p>
           </Divider>
-  
+
           <Grid
             container
             columns="equal"
@@ -38,7 +37,7 @@ const Services = () =>{
                 </Header>
                 <FaCrown size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                    Creación y gestión de la marca personal.
+                  Creación y gestión de la marca personal.
                 </p>
               </Grid.Column>
               <Grid.Column>
@@ -62,7 +61,7 @@ const Services = () =>{
                 </Header>
                 <FaUserTie size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                Asesoramiento y acompañamiento gestor.
+                  Asesoramiento y acompañamiento gestor.
                 </p>
               </Grid.Column>
             </Grid.Row>
@@ -76,8 +75,8 @@ const Services = () =>{
                 </Header>
                 <FaCamera size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                Sesiones de fotografía con fotógrafos profesionales en exterior
-                  y estudio.
+                  Sesiones de fotografía con fotógrafos profesionales en
+                  exterior y estudio.
                 </p>
               </Grid.Column>
               <Grid.Column>
@@ -89,15 +88,16 @@ const Services = () =>{
                 </Header>
                 <FaFilm size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Rodajes con film-makers profesionales para producciones en video.
+                  Rodajes con film-makers profesionales para producciones en
+                  video.
                 </p>
               </Grid.Column>
             </Grid.Row>
           </Grid>
-          </Container>
-          </Segment>
-      </div>
-    )
-  }
+        </Container>
+      </Segment>
+    </div>
+  );
+};
 
-  export default Services
+export default Services;

@@ -1,10 +1,4 @@
-import {
-  Divider,
-  Segment,
-  Grid,
-  Header,
-  Image,
-} from "semantic-ui-react";
+import { Divider, Segment, Grid, Header, Image } from "semantic-ui-react";
 
 const AboutUs = () => {
   return (
@@ -16,7 +10,7 @@ const AboutUs = () => {
           horizontal
           style={{ margin: "0em 0em 1em", textTransform: "uppercase" }}
         >
-          <p>A cerca de nosotros</p>
+          <p>Acerca de nosotros</p>
         </Divider>
         <Grid container centered stackable verticalAlign="middle">
           <Grid.Row>
@@ -27,7 +21,7 @@ const AboutUs = () => {
                   fontSize: "1.6em",
                   margin: "1em 2.5em",
                   textAlign: "center",
-                  color: "rgba(207, 160, 18, 1)"
+                  color: "rgba(207, 160, 18, 1)",
                 }}
               >
                 Nos esforzamos para hacer crecer tu audiencia
@@ -67,7 +61,7 @@ const AboutUs = () => {
                   fontSize: "1.6em",
                   margin: "1em 2.5em",
                   textAlign: "center",
-                  color: "rgba(207, 160, 18, 1)"
+                  color: "rgba(207, 160, 18, 1)",
                 }}
               >
                 Te damos la posibilidad de que solo tengas que crear el

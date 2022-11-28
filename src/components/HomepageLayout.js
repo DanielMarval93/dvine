@@ -398,26 +398,26 @@ const HomepageLayout = () => (
 
     <Segment inverted vertical style={{ padding: "1.6em 0em" }}>
       <Container>
-        <Grid divided inverted centered stackable>
+        <Grid divided inverted centered>
         <Grid.Row>
             <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"1.33em"}}>
-            <List.Item as="a">
-                  <FaRegEnvelope size="1.33em"/>  info@dvinemodels.com
+            <List link inverted style={{fontSize:"1em"}}>
+            <List.Item as="a" style={{wordWrap: 'break-word'}}>
+                  <FaRegEnvelope size="1em"/><br/>  info@dvinemodels.com
                 </List.Item>
             </List>
             </Grid.Column>
             <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{fontSize:"1.33em"}}>
-                <List.Item as="a">
-                  <FaInstagram size="1.33em"/>  dvinemodels
+              <List link inverted style={{fontSize:"1em"}}>
+                <List.Item as="a" href='https://www.instagram.com/dvinemodels/'>
+                  <FaInstagram size="1em"/> <br/> dvinemodels
                 </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"1.33em"}}>
+            <List link inverted style={{fontSize:"1em"}}>
             <List.Item as="a">
-                  <FaPhone size="1.33em"/>  (+34) 613 56 53 98
+                  <FaPhone size="1em"/> <br/> (+34) 613 56 53 98
                 </List.Item>
             </List>
             </Grid.Column>

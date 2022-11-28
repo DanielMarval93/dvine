@@ -21,9 +21,9 @@ const Contact = () => {
           >
             <p>Contacto</p>
           </Divider>
-          <Grid divided centered>
+          <Grid centered>
             <Grid.Row>
-              <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <Grid.Column width={5} centered style={{ textAlign: "center" }}>
                 <List link style={{ fontSize: "0.9em" }}>
                   <List.Item
                     style={{
@@ -36,7 +36,7 @@ const Contact = () => {
                   </List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <Grid.Column width={5} centered style={{ textAlign: "center" }}>
                 <List link style={{ fontSize: "0.9em" }}>
                   <List.Item
                     as="a"
@@ -47,7 +47,7 @@ const Contact = () => {
                   </List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <Grid.Column width={5} centered style={{ textAlign: "center" }}>
                 <List link style={{ fontSize: "0.9em" }}>
                   <List.Item  style={{ color: "rgba(207, 160, 18, 1)" }}>
                     <FaPhone size="3.3em" /> <br /> (+34) 613 56 53 98

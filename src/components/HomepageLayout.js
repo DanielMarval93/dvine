@@ -15,7 +15,6 @@ import {
   Segment,
   Sidebar,
   Visibility,
-  Button
 } from "semantic-ui-react";
 
 import AboutUs from "./Segments/AboutUs";

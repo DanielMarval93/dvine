@@ -401,23 +401,23 @@ const HomepageLayout = () => (
         <Grid divided inverted centered>
         <Grid.Row>
             <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"1em"}}>
+            <List link inverted style={{fontSize:"0.9em"}}>
             <List.Item as="a" style={{wordWrap: 'break-word'}}>
-                  <FaRegEnvelope size="1em"/><br/>  info@dvinemodels.com
+                  <FaRegEnvelope size="1.3em"/><br/>  info@dvinemodels.com
                 </List.Item>
             </List>
             </Grid.Column>
             <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{fontSize:"1em"}}>
+              <List link inverted style={{fontSize: "0.9em"}}>
                 <List.Item as="a" href='https://www.instagram.com/dvinemodels/'>
-                  <FaInstagram size="1em"/> <br/> dvinemodels
+                  <FaInstagram size="1.3em"/> <br/> dvinemodels
                 </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"1em"}}>
+            <List link inverted style={{fontSize:"0.9em"}}>
             <List.Item as="a">
-                  <FaPhone size="1em"/> <br/> (+34) 613 56 53 98
+                  <FaPhone size="1.3em"/> <br/> (+34) 613 56 53 98
                 </List.Item>
             </List>
             </Grid.Column>

@@ -29,6 +29,8 @@ import {
   Visibility,
 } from "semantic-ui-react";
 
+import AboutUs from "./Segments/AboutUs";
+
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
     mobile: 0,
@@ -48,7 +50,7 @@ const HomepageHeading = ({ mobile }) => (
       src="https://i.imgur.com/0K4iZGu.png"
       style={{
         margin: "auto",
-        marginTop: mobile ? "4.45em" : "12em",
+        marginTop: mobile ? "8.6em" : "12em",
         maxHeight: mobile ? "5em" : "20em",
       }}
     />
@@ -180,11 +182,24 @@ class MobileContainer extends Component {
               vertical
             >
               <Container>
-                <Menu inverted pointing secondary size="large">
+                <Menu
+                  inverted
+                  pointing
+                  secondary
+                  fixed="top"
+                  size="large"
+                  style={{ backgroundColor: "pink",
+                          }}
+                >
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar" />
+                    <Icon name="sidebar"/>
                   </Menu.Item>
-                  <Menu.Item position="right"></Menu.Item>
+                  <Menu.Item position="right">
+                    <Image
+                      src="https://i.imgur.com/0K4iZGu.png"
+                      style={{ maxHeight: "2.6em", padding: "0px" }}
+                    />
+                  </Menu.Item>
                 </Menu>
               </Container>
               <HomepageHeading mobile />
@@ -219,55 +234,17 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: "5.7em 0em" }} vertical>
-      <Grid container stackable verticalAlign="middle">
-        <Grid.Row>
-          <Grid.Column width={16}>
-            <Header
-              as="h1"
-              style={{
-                fontSize: "2.6em",
-                textAlign: "center",
-                padding: "0em 0em 0.8em 0em",
-              }}
-            >
-              A cerca de nosotros
-            </Header>
-            <Image
-              className="aboutUsImage"
-              rounded
-              size="big"
-              src="https://i.imgur.com/Plp71HY.jpeg"
-              floated="right"
-            />
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Nos esforzamos para hacer crecer tu audiencia
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Dvine models es una agencia de representación de modelos en
-              plataformas de contenido para adultos como Only fans. Nos
-              esforzamos para hacer crecer tu audiencia y así obtener el máximo
-              de resultados. Utilizando nuestros conocimientos, experiencia y
-              contactos, generamos tráfico online, gestionamos las cuentas y la
-              marca personal de cada modelo.
-            </p>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Te damos la posibilidad de que solo tengas que crear el contenido
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Nos encargamos de la creación, gestión y promoción de la cuenta
-              para que tu solamente tengas que crear el contenido con nuestro
-              asesoramiento. Contamos con un equipo profesional, canales propios
-              de difusión y múltiples casos de éxito. Deja que Dvine models haga
-              todo el trabajo por ti y empieza a vivir de los ingresos
-              generados.
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+    <AboutUs />
 
     <Segment style={{ padding: "0em" }} vertical>
+      <Divider
+        as="h3"
+        className="header"
+        horizontal
+        style={{ margin: "0em 0em 0.5em", textTransform: "uppercase" }}
+      >
+        <p>Galeria</p>
+      </Divider>
       <Grid celled="internally" columns="equal" stackable>
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
@@ -278,15 +255,20 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em"}}>
-            <Image bordered rounded src="https://i.imgur.com/6I53fht.jpg" style={{maxHeight:'35em', margin:'auto'}} />
+          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+            <Image
+              bordered
+              rounded
+              src="https://i.imgur.com/6I53fht.jpg"
+              style={{ maxHeight: "35em", margin: "auto" }}
+            />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
             <Image
               bordered
               rounded
               src="https://i.imgur.com/fE6mEw7.jpg"
-              style={{maxHeight:'35em', margin:'auto'}}
+              style={{ maxHeight: "35em", margin: "auto" }}
             />
           </Grid.Column>
         </Grid.Row>
@@ -395,31 +377,31 @@ const HomepageLayout = () => (
       </Container>
       <Image src="https://i.imgur.com/n4B2ntK.jpg" />
     </Segment>
-
     <Segment inverted vertical style={{ padding: "1.6em 0em" }}>
       <Container>
         <Grid divided inverted centered>
-        <Grid.Row>
-            <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"0.9em"}}>
-            <List.Item as="a" style={{wordWrap: 'break-word'}}>
-                  <FaRegEnvelope size="1.3em"/><br/>  info@dvinemodels.com
-                </List.Item>
-            </List>
-            </Grid.Column>
+          <Grid.Row>
             <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{fontSize: "0.9em"}}>
-                <List.Item as="a" href='https://www.instagram.com/dvinemodels/'>
-                  <FaInstagram size="1.3em"/> <br/> dvinemodels
+              <List link inverted style={{ fontSize: "0.9em" }}>
+                <List.Item as="a" style={{ wordWrap: "break-word" }}>
+                  <FaRegEnvelope size="1.3em" />
+                  <br /> info@dvinemodels.com
                 </List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={4}centered style={{ textAlign: "center" }}>
-            <List link inverted style={{fontSize:"0.9em"}}>
-            <List.Item as="a">
-                  <FaPhone size="1.3em"/> <br/> (+34) 613 56 53 98
+            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <List link inverted style={{ fontSize: "0.9em" }}>
+                <List.Item as="a" href="https://www.instagram.com/dvinemodels/">
+                  <FaInstagram size="1.3em" /> <br /> dvinemodels
                 </List.Item>
-            </List>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <List link inverted style={{ fontSize: "0.9em" }}>
+                <List.Item as="a">
+                  <FaPhone size="1.3em" /> <br /> (+34) 613 56 53 98
+                </List.Item>
+              </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>

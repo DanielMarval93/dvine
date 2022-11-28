@@ -48,7 +48,7 @@ const HomepageHeading = ({ mobile }) => (
       src="https://i.imgur.com/0K4iZGu.png"
       style={{
         margin: "auto",
-        marginTop: mobile ? "4.45em" : "7em",
+        marginTop: mobile ? "4.45em" : "12em",
         maxHeight: mobile ? "5em" : "20em",
       }}
     />
@@ -101,7 +101,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 600, padding: "1em 0em" }}
+            style={{ minHeight: 610, padding: "1em 0em" }}
             vertical
           >
             <Menu
@@ -396,24 +396,30 @@ const HomepageLayout = () => (
       <Image src="https://i.imgur.com/n4B2ntK.jpg" />
     </Segment>
 
-    <Segment inverted vertical style={{ padding: "5em 0em" }}>
+    <Segment inverted vertical style={{ padding: "1.6em 0em" }}>
       <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row></Grid.Row>
-          <Grid.Row>
-            <Grid.Column  centered style={{ textAlign: "center" }}>
-              <Header inverted as="h2" content="Contacto" />
-              <List link inverted style={{fontSize:"1.33em"}}>
-                <List.Item as="a">
+        <Grid divided inverted centered stackable>
+        <Grid.Row>
+            <Grid.Column width={4}centered style={{ textAlign: "center" }}>
+            <List link inverted style={{fontSize:"1.33em"}}>
+            <List.Item as="a">
                   <FaRegEnvelope size="1.33em"/>  info@dvinemodels.com
                 </List.Item>
+            </List>
+            </Grid.Column>
+            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
+              <List link inverted style={{fontSize:"1.33em"}}>
                 <List.Item as="a">
-                  <FaInstagram size="1.33em"/>  @dvinemodels
-                </List.Item>
-                <List.Item as="a">
-                  <FaPhone size="1.33em"/>  (+34) 613 56 53 98
+                  <FaInstagram size="1.33em"/>  dvinemodels
                 </List.Item>
               </List>
+            </Grid.Column>
+            <Grid.Column width={4}centered style={{ textAlign: "center" }}>
+            <List link inverted style={{fontSize:"1.33em"}}>
+            <List.Item as="a">
+                  <FaPhone size="1.33em"/>  (+34) 613 56 53 98
+                </List.Item>
+            </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>

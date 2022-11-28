@@ -58,6 +58,7 @@ const HomepageHeading = ({ mobile }) => (
         fontFamily: "LEMONMILK-Light",
       }}
     />
+    {/*
     <Button
       style={{
         marginTop: mobile ? "0.6em" : "1em",
@@ -65,6 +66,7 @@ const HomepageHeading = ({ mobile }) => (
     >
       Conocenos
     </Button>
+    */}
   </Container>
 );
 

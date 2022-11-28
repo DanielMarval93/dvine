@@ -38,7 +38,7 @@ const Services = () =>{
                 </Header>
                 <FaCrown size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Creacion y gestion de la marca personal.
+                    Creación y gestión de la marca personal.
                 </p>
               </Grid.Column>
               <Grid.Column>
@@ -50,7 +50,7 @@ const Services = () =>{
                 </Header>
                 <FaChartLine size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Marketing en redes sociales y aumento de notoriedad
+                  Marketing en redes sociales y aumento de notoriedad.
                 </p>
               </Grid.Column>
               <Grid.Column>
@@ -62,7 +62,7 @@ const Services = () =>{
                 </Header>
                 <FaUserTie size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Asesoramiento y acompanamiento gestor.
+                Asesoramiento y acompañamiento gestor.
                 </p>
               </Grid.Column>
             </Grid.Row>
@@ -76,7 +76,7 @@ const Services = () =>{
                 </Header>
                 <FaCamera size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Sesiones de fotografia con fotografos profeisonales en exterios
+                Sesiones de fotografía con fotógrafos profesionales en exterior
                   y estudio.
                 </p>
               </Grid.Column>
@@ -89,7 +89,7 @@ const Services = () =>{
                 </Header>
                 <FaFilm size="2em" />
                 <p style={{ fontSize: "1.33em" }}>
-                  Rodajes con filmmakers profesionales para producciones en video.
+                  Rodajes con film-makers profesionales para producciones en video.
                 </p>
               </Grid.Column>
             </Grid.Row>

@@ -1,26 +1,33 @@
-import { Divider, Segment, Grid, Header, Image } from "semantic-ui-react";
+import {
+  Divider,
+  Segment,
+  Grid,
+  Header,
+  Image,
+} from "semantic-ui-react";
 
 const AboutUs = () => {
   return (
     <div>
       <Segment style={{ padding: "6.7em 0em 2em" }} vertical>
-      <Divider
-                as="h2"
-                className="header"
-                horizontal
-                style={{ margin: "0em 0em 1em", textTransform: "uppercase" }}
-              >
-                <p>A cerca de nosotros</p>
-              </Divider>
-        <Grid container stackable verticalAlign="middle">
+        <Divider
+          as="h2"
+          className="header"
+          horizontal
+          style={{ margin: "0em 0em 1em", textTransform: "uppercase" }}
+        >
+          <p>A cerca de nosotros</p>
+        </Divider>
+        <Grid container centered stackable verticalAlign="middle">
           <Grid.Row>
-              <Grid.Column width={16}>
+            <Grid.Column width={10}>
               <Header
                 as="h3"
                 style={{
                   fontSize: "1.6em",
                   margin: "1em 2.5em",
                   textAlign: "center",
+                  color: "rgba(207, 160, 18, 1)"
                 }}
               >
                 Nos esforzamos para hacer crecer tu audiencia
@@ -29,7 +36,7 @@ const AboutUs = () => {
                 style={{
                   fontSize: "1.33em",
                   margin: "1em 3em",
-                  textAlign: "center",
+                  textAlign: "justify",
                 }}
               >
                 Dvine models es una agencia de representación de modelos en
@@ -39,25 +46,28 @@ const AboutUs = () => {
                 experiencia y contactos, generamos tráfico online, gestionamos
                 las cuentas y la marca personal de cada modelo.
               </p>
-              </Grid.Column>
-              <Grid.Column width={16}>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={16}>
               <Image
                 className="aboutUsImage"
                 rounded
                 size="big"
                 centered
                 src="https://i.imgur.com/Plp71HY.jpeg"
-                
               />
-              </Grid.Column>
-              
-              <Grid.Column width={16}>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={10}>
               <Header
                 as="h3"
                 style={{
                   fontSize: "1.6em",
                   margin: "1em 2.5em",
                   textAlign: "center",
+                  color: "rgba(207, 160, 18, 1)"
                 }}
               >
                 Te damos la posibilidad de que solo tengas que crear el
@@ -67,7 +77,7 @@ const AboutUs = () => {
                 style={{
                   fontSize: "1.33em",
                   margin: "1em 3em",
-                  textAlign: "center",
+                  textAlign: "justify",
                 }}
               >
                 Nos encargamos de la creación, gestión y promoción de la cuenta

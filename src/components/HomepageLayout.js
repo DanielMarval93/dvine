@@ -5,7 +5,6 @@ import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
-
 import {
   Container,
   Header,
@@ -21,7 +20,7 @@ import AboutUs from "./Segments/AboutUs";
 import Gallery from "./Segments/Gallery";
 import Services from "./Segments/Services";
 import JoinUs from "./Segments/JoinUs";
-import Footer from "./Segments/Footer";
+import Contact from "./Segments/Contact";
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -78,6 +77,7 @@ HomepageHeading.propTypes = {
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
+
   state = {};
 
   hideFixedMenu = () => this.setState({ fixed: false });
@@ -228,12 +228,13 @@ ResponsiveContainer.propTypes = {
 
 
 const HomepageLayout = () => (
+  
   <ResponsiveContainer>
     <AboutUs />
     <Gallery/>
     <Services />
     <JoinUs/>
-    <Footer/>
+    <Contact/>
   </ResponsiveContainer>
 );
 

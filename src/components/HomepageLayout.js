@@ -4,32 +4,25 @@
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import {
-  FaChartLine,
-  FaInstagram,
-  FaCrown,
-  FaUserTie,
-  FaCamera,
-  FaFilm,
-  FaRegEnvelope,
-  FaPhone,
-} from "react-icons/fa";
+
 
 import {
   Container,
-  Divider,
-  Grid,
   Header,
   Icon,
   Image,
-  List,
   Menu,
   Segment,
   Sidebar,
   Visibility,
+  Button
 } from "semantic-ui-react";
 
 import AboutUs from "./Segments/AboutUs";
+import Gallery from "./Segments/Gallery";
+import Services from "./Segments/Services";
+import JoinUs from "./Segments/JoinUs";
+import Footer from "./Segments/Footer";
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -50,7 +43,7 @@ const HomepageHeading = ({ mobile }) => (
       src="https://i.imgur.com/0K4iZGu.png"
       style={{
         margin: "auto",
-        marginTop: mobile ? "8.6em" : "12em",
+        marginTop: mobile ? "8.6em" : "8.4em",
         maxHeight: mobile ? "5em" : "20em",
       }}
     />
@@ -65,13 +58,13 @@ const HomepageHeading = ({ mobile }) => (
         fontFamily: "LEMONMILK-Light",
       }}
     />
-    {/*<Button
+    <Button
       style={{
         marginTop: mobile ? "0.6em" : "1em",
       }}
     >
       Conocenos
-    </Button>*/}
+    </Button>
   </Container>
 );
 
@@ -188,7 +181,7 @@ class MobileContainer extends Component {
                   secondary
                   fixed="top"
                   size="large"
-                  style={{ backgroundColor: "pink",
+                  style={{ backgroundColor: "black",
                           }}
                 >
                   <Menu.Item onClick={this.handleToggle}>
@@ -232,181 +225,14 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 };
 
+
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <AboutUs />
-
-    <Segment style={{ padding: "0em" }} vertical>
-      <Divider
-        as="h3"
-        className="header"
-        horizontal
-        style={{ margin: "0em 0em 0.5em", textTransform: "uppercase" }}
-      >
-        <p>Galeria</p>
-      </Divider>
-      <Grid celled="internally" columns="equal" stackable>
-        <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" />
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Image bordered rounded src="https://i.imgur.com/ulFiruB.jpg" />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Image
-              bordered
-              rounded
-              src="https://i.imgur.com/6I53fht.jpg"
-              style={{ maxHeight: "35em", margin: "auto" }}
-            />
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Image
-              bordered
-              rounded
-              src="https://i.imgur.com/fE6mEw7.jpg"
-              style={{ maxHeight: "35em", margin: "auto" }}
-            />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-
-    <Segment style={{ padding: "5em 0em 0em 0em" }} vertical>
-      <Container text>
-        <Divider
-          as="h3"
-          className="header"
-          horizontal
-          style={{ margin: "0em 0em 3em", textTransform: "uppercase" }}
-        >
-          <p>Servicios</p>
-        </Divider>
-
-        <Grid
-          container
-          columns="equal"
-          stackable
-          style={{ textAlign: "center" }}
-        >
-          <Grid.Row>
-            <Grid.Column>
-              <Header
-                as="h4"
-                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
-              >
-                Marca
-              </Header>
-              <FaCrown size="2em" />
-              <p style={{ fontSize: "1.33em" }}>
-                Creacion y gestion de la marca personal.
-              </p>
-            </Grid.Column>
-            <Grid.Column>
-              <Header
-                as="h4"
-                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
-              >
-                Marketing
-              </Header>
-              <FaChartLine size="2em" />
-              <p style={{ fontSize: "1.33em" }}>
-                Marketing en redes sociales y aumento de notoriedad
-              </p>
-            </Grid.Column>
-            <Grid.Column>
-              <Header
-                as="h4"
-                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
-              >
-                Gestoria
-              </Header>
-              <FaUserTie size="2em" />
-              <p style={{ fontSize: "1.33em" }}>
-                Asesoramiento y acompanamiento gestor.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column>
-              <Header
-                as="h4"
-                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
-              >
-                Fotografia
-              </Header>
-              <FaCamera size="2em" />
-              <p style={{ fontSize: "1.33em" }}>
-                Sesiones de fotografia con fotografos profeisonales en exterios
-                y estudio.
-              </p>
-            </Grid.Column>
-            <Grid.Column>
-              <Header
-                as="h4"
-                style={{ fontSize: "1.6em", color: "rgba(207, 160, 18, 1)" }}
-              >
-                Video
-              </Header>
-              <FaFilm size="2em" />
-              <p style={{ fontSize: "1.33em" }}>
-                Rodajes con filmmakers profesionales para producciones en video.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Divider
-          as="h3"
-          className="header"
-          horizontal
-          style={{ margin: "3em 0em", textTransform: "uppercase" }}
-        >
-          <p>Unete a Nosotros</p>
-        </Divider>
-
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Quieres ser parte de nuestro equipo?
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Buscamos perfil entre 18 y 50 anos sin importar nacionalidad. Modelos
-          comprometidas y con ganas de ganar ingresos altos.
-        </p>
-      </Container>
-      <Image src="https://i.imgur.com/n4B2ntK.jpg" />
-    </Segment>
-    <Segment inverted vertical style={{ padding: "1.6em 0em" }}>
-      <Container>
-        <Grid divided inverted centered>
-          <Grid.Row>
-            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{ fontSize: "0.9em" }}>
-                <List.Item as="a" style={{ wordWrap: "break-word" }}>
-                  <FaRegEnvelope size="1.3em" />
-                  <br /> info@dvinemodels.com
-                </List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{ fontSize: "0.9em" }}>
-                <List.Item as="a" href="https://www.instagram.com/dvinemodels/">
-                  <FaInstagram size="1.3em" /> <br /> dvinemodels
-                </List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={4} centered style={{ textAlign: "center" }}>
-              <List link inverted style={{ fontSize: "0.9em" }}>
-                <List.Item as="a">
-                  <FaPhone size="1.3em" /> <br /> (+34) 613 56 53 98
-                </List.Item>
-              </List>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
+    <Gallery/>
+    <Services />
+    <JoinUs/>
+    <Footer/>
   </ResponsiveContainer>
 );
 

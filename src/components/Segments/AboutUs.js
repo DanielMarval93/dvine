@@ -1,20 +1,18 @@
-import { Segment, Grid,Header, Image } from "semantic-ui-react"
+import { Divider, Segment, Grid,Header, Image } from "semantic-ui-react"
 
 const AboutUs = () =>{return (<div>
     <Segment style={{ padding: "6.7em 0em" }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
               <Grid.Column width={16}>
-                <Header
-                  as="h1"
-                  style={{
-                    fontSize: "2.6em",
-                    textAlign: "center",
-                    padding: "0em 0em 0.8em 0em",
-                  }}
-                >
-                  A cerca de nosotros
-                </Header>
+              <Divider
+          as="h3"
+          className="header"
+          horizontal
+          style={{ margin: "0em 0em 3em", textTransform: "uppercase" }}
+        >
+          <p>A cerca de nosotros</p>
+        </Divider>
                 <Image
                   className="aboutUsImage"
                   rounded

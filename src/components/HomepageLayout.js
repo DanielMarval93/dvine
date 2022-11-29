@@ -8,7 +8,6 @@ import React, { Component } from "react";
 import {
   Container,
   Header,
-  Icon,
   Image,
   Menu,
   Segment,
@@ -73,7 +72,8 @@ HomepageHeading.propTypes = {
 };
 
 /* Heads up!
- * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
+ * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented
+ easily.
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
@@ -146,29 +146,8 @@ class MobileContainer extends Component {
 
   render() {
     const { children } = this.props;
-    const { sidebarOpened } = this.state;
-
     return (
       <Media as={Sidebar.Pushable} at="mobile" fixed="top">
-        <Sidebar.Pushable>
-          <Sidebar
-            as={Menu}
-            animation="overlay"
-            inverted
-            onHide={this.handleSidebarHide}
-            vertical
-            visible={sidebarOpened}
-          >
-            <Menu.Item as="a" active>
-              Home
-            </Menu.Item>
-            <Menu.Item as="a">About Us</Menu.Item>
-            <Menu.Item as="a">Gallery</Menu.Item>
-            <Menu.Item as="a">Contact</Menu.Item>
-            <Menu.Item as="a">Services</Menu.Item>
-          </Sidebar>
-
-          <Sidebar.Pusher dimmed={sidebarOpened}>
             <Segment
               inverted
               textAlign="center"
@@ -176,31 +155,32 @@ class MobileContainer extends Component {
               vertical
             >
               <Container>
-                <Menu
-                  inverted
-                  pointing
-                  secondary
-                  fixed="top"
-                  size="large"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar" style={{height:"2em"}}/>
-                  </Menu.Item>
-                  <Menu.Item position="right">
-                    <Image
-                      src="https://i.imgur.com/0K4iZGu.png"
-                      style={{ maxHeight: "2.6em", padding: "0px" }}
-                    />
-                  </Menu.Item>
+              <Menu
+              fixed={"top"}
+              inverted={true}
+
+              size="large"
+              style={{ backgroundColor: "black" }}
+            >
+              <Container>
+                <Image
+                  src="https://i.imgur.com/0K4iZGu.png"
+                  style={{ maxHeight: "2.6em", margin: "0.5em" }}
+                />
+                <Menu.Item position="right" style={{ padding: "0px" }}>
+                  <Menu.Item as="a">About Us</Menu.Item>
+                  <Menu.Item as="a">Gallery</Menu.Item>
+                  <Menu.Item as="a">Services</Menu.Item>
+                  <Menu.Item as="a">Contact</Menu.Item>
+                </Menu.Item>
+              </Container>
+            
                 </Menu>
               </Container>
               <HomepageHeading mobile />
             </Segment>
 
             {children}
-          </Sidebar.Pusher>
-        </Sidebar.Pushable>
       </Media>
     );
   }

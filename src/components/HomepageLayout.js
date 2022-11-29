@@ -116,10 +116,11 @@ class DesktopContainer extends Component {
                   <Menu.Item as="a" active>
                     Home
                   </Menu.Item>
-                  <Menu.Item as="a">About Us</Menu.Item>
-                  <Menu.Item as="a">Gallery</Menu.Item>
-                  <Menu.Item as="a">Services</Menu.Item>
-                  <Menu.Item as="a">Contact</Menu.Item>
+                  <Menu.Item as="a">Conocenos</Menu.Item>
+                  <Menu.Item as="a">Galeria</Menu.Item>
+                  <Menu.Item as="a">Servicios</Menu.Item>                  
+                  <Menu.Item as="a">Unete</Menu.Item>
+                  <Menu.Item as="a">Contacto</Menu.Item>
                 </Menu.Item>
               </Container>
             </Menu>
@@ -168,10 +169,9 @@ class MobileContainer extends Component {
                   style={{ maxHeight: "2.6em", margin: "0.5em" }}
                 />
                 <Menu.Item position="right" style={{ padding: "0px" }}>
-                  <Menu.Item as="a">About Us</Menu.Item>
-                  <Menu.Item as="a">Gallery</Menu.Item>
-                  <Menu.Item as="a">Services</Menu.Item>
-                  <Menu.Item as="a">Contact</Menu.Item>
+                  <Menu.Item as="a">Galeria</Menu.Item>
+                  <Menu.Item as="a">Servicios</Menu.Item>
+                  <Menu.Item as="a">Contacto</Menu.Item>
                 </Menu.Item>
               </Container>
             

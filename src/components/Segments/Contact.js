@@ -25,40 +25,40 @@ const Contact = () => {
           <Grid centered>
             <Grid.Row>
               <Grid.Column width={5} centered style={{ textAlign: "center" }}>
-                <List link style={{ fontSize: "0.9em" }}>
+                <List link style={{ fontSize: "1.2em" }}>
                   <List.Item
                     style={{
                       wordWrap: "break-word",
                       color: "rgba(207, 160, 18, 1)",
                     }}
                   >
-                    <FaRegEnvelope size="3.3em" />
+                    <FaRegEnvelope size="2.5em" />
                     <br /> info@dvinemodels.com
                   </List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={5} centered style={{ textAlign: "center" }}>
-                <List link style={{ fontSize: "0.9em" }}>
+                <List link style={{ fontSize: "1.2em" }}>
                   <List.Item
                     as="a"
                     style={{ color: "rgba(207, 160, 18, 1)" }}
                     href="https://www.instagram.com/dvinemodels/"
                   >
-                    <FaInstagram size="3.3em" /> <br /> dvinemodels
+                    <FaInstagram size="2.5em" /> <br /> dvinemodels
                   </List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={5} centered style={{ textAlign: "center" }}>
-                <List link style={{ fontSize: "0.9em" }}>
+                <List link style={{ fontSize: "1.2em" }}>
                   <List.Item  style={{ color: "rgba(207, 160, 18, 1)" }}>
-                    <SlPhone size="3.3em" /> <br /> (+34) 613 56 53 98
+                    <SlPhone size="2.5em" /> <br /> (+34) 613 56 53 98
                   </List.Item>
                 </List>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Container>
-        <Image src="https://i.imgur.com/vGf9MDu.jpg" />
+        <Image src="https://i.imgur.com/vGf9MDu.jpg" style={{paddingTop:'3em', width:'100%'}}/>
       </Segment>
     </div>
   );

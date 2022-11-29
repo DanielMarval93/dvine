@@ -185,7 +185,7 @@ class MobileContainer extends Component {
                   style={{ backgroundColor: "black" }}
                 >
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar" />
+                    <Icon name="sidebar" style={{height:"2em"}}/>
                   </Menu.Item>
                   <Menu.Item position="right">
                     <Image

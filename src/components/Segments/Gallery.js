@@ -12,8 +12,8 @@ const Gallery = () => {
         >
           <p>Galeria</p>
         </Divider>
-        <Grid celled="internally" columns="equal" stackable>
-          <Grid.Row textAlign="center" centered >
+        <Grid celled="internally" columns="equal" centered stackable>
+          <Grid.Row textAlign="center" >
             <Grid.Column width={7}style={{ paddingBottom: "5em", paddingTop: "5em" }}>
               <Image bordered rounded src="https://i.imgur.com/MUWPCqK.jpg" />
             </Grid.Column>

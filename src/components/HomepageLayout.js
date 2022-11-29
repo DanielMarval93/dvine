@@ -116,10 +116,9 @@ class DesktopContainer extends Component {
                   <Menu.Item as="a" active>
                     Home
                   </Menu.Item>
-                  <Menu.Item as="a">Conocenos</Menu.Item>
+                  <Menu.Item as="a">Nosotros</Menu.Item>
                   <Menu.Item as="a">Galeria</Menu.Item>
-                  <Menu.Item as="a">Servicios</Menu.Item>                  
-                  <Menu.Item as="a">Unete</Menu.Item>
+                  <Menu.Item as="a">Servicios</Menu.Item>   
                   <Menu.Item as="a">Contacto</Menu.Item>
                 </Menu.Item>
               </Container>

@@ -12,13 +12,13 @@ import { SlPhone } from "react-icons/sl"
 const Contact = () => {
   return (
     <div>
-      <Segment style={{ padding: "1.5em 0em 0em 0em" }} vertical>
+      <Segment style={{ padding: "1em 0em 0em 0em" }} vertical>
         <Container text>
           <Divider
             as="h2"
             className="header"
             horizontal
-            style={{ margin: "1em 0em 2em", textTransform: "uppercase" }}
+            style={{ margin: "0em 0em 2em", textTransform: "uppercase" }}
           >
             <p>Contacto</p>
           </Divider>

@@ -42,3 +42,12 @@ body{
 .ui.image.logo{  height: 8em;
     background-size: cover;
     transform: scale(1.4)}
+
+
+    @media (max-width:768px){
+      .ui.inverted.vertical.center.aligned.segment {  
+        background-size: 100%;
+        background-position-x: 1em;
+        background-position-y: 2em;
+        }
+      }

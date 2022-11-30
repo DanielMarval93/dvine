@@ -12,7 +12,7 @@ import { SlPhone } from "react-icons/sl"
 const Contact = () => {
   return (
     <div>
-      <Segment style={{ padding: "1em 0em 0em 0em" }} vertical>
+      <Segment style={{ padding: "0em 0em 0em 0em" }} vertical>
         <Container text>
           <Divider
             as="h2"

@@ -18,7 +18,7 @@ const JoinUs = () => {
             as="h3"
             style={{
               fontSize: "1.5em",
-              margin: "0em 1em 0.5em 1em",
+              margin: "0em 1em 0em 1em",
               textAlign: "center",
               color: "rgba(207, 160, 18, 1)"
             }}

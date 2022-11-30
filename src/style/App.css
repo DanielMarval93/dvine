@@ -46,8 +46,8 @@ body{
 
     @media (max-width:768px){
       .ui.inverted.vertical.center.aligned.segment {  
-        background-size: 100%;
-        background-position-x: 1em;
-        background-position-y: 2em;
+        background-size: 110%;
+        background-position-x: 0em;
+        background-position-y: 4em;
         }
       }

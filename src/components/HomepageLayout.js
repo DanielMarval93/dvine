@@ -3,7 +3,7 @@
 
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import {
   Container,
@@ -109,7 +109,7 @@ const DesktopContainer = (props) => {
                 <Menu.Item as="a" active>
                   Home
                 </Menu.Item>
-                <Menu.Item as="a">Nosotros</Menu.Item>
+                <Menu.Item as="a" >Nosotros</Menu.Item>
                 <Menu.Item as="a">Galeria</Menu.Item>
                 <Menu.Item as="a">Servicios</Menu.Item>
                 <Menu.Item as="a">Contacto</Menu.Item>
@@ -213,14 +213,43 @@ const HomepageLayout = () => {
     });
   };
 
+  const scrollDown = (ref, yValue) => {
+    window.scrollTo({
+      top: (ref.current.offsetTop-yValue),
+      behavior: 'smooth',
+    });
+  };
+
+  
+  const aboutSection = useRef(null);
+  const gallerySection = useRef(null);
+  const servicesSection = useRef(null);
+  const joinUsSection = useRef(null);
+  const contactSection = useRef(null);
+
   return (
     <ResponsiveContainer>
+    <button onClick={() => scrollDown(aboutSection, 20)}>about us</button>
+      <button onClick={() => scrollDown(gallerySection, 70)}>gallery</button>
+      <button onClick={() => scrollDown(servicesSection, 50)}>services</button>
+      <button onClick={() => scrollDown(joinUsSection, -20)}>join us</button>
+      <button onClick={() => scrollDown(contactSection, 50)}>contact</button>
       <ScrollToTop/>
+      <div ref={aboutSection}>
       <AboutUs />
+      </div>
+      <div ref={gallerySection}>
       <Gallery goToTop={goToTop}/>
+      </div>
+      <div ref={servicesSection}>
       <Services />
+      </div>
+      <div ref={joinUsSection}>
       <JoinUs />
+      </div>
+      <div ref={contactSection}>
       <Contact />
+      </div>
     </ResponsiveContainer>
   );
 };

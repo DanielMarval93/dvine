@@ -3,7 +3,8 @@
 
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
+import RefContext from "../context/RefContext";
 
 import {
   Container,
@@ -75,6 +76,22 @@ const DesktopContainer = (props) => {
   const hideFixedMenu = () => setFixed(false);
   const showFixedMenu = () => setFixed(true);
 
+  const {
+    gallerySection,
+    servicesSection,
+    contactSection,
+    joinUsSection,
+    aboutSection,
+    scrollDown,
+  } = useContext(RefContext);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const { children } = props;
 
   return (
@@ -99,20 +116,46 @@ const DesktopContainer = (props) => {
             style={{ backgroundColor: "black" }}
           >
             <Container>
-              <a href="https://www.google.com/">
+              
                 <Image
                   src="https://i.imgur.com/2tEjfCo.png"
                   style={{ maxHeight: "2.6em", margin: "0.5em" }}
                 />
-              </a>
+              
               <Menu.Item position="right" style={{ padding: "0px" }}>
-                <Menu.Item as="a" active>
+                <Menu.Item as="a" active onClick={goToTop}>
                   Home
                 </Menu.Item>
-                <Menu.Item as="a" >Nosotros</Menu.Item>
-                <Menu.Item as="a">Galeria</Menu.Item>
-                <Menu.Item as="a">Servicios</Menu.Item>
-                <Menu.Item as="a">Contacto</Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() => scrollDown(aboutSection, 20)}
+                >
+                  Nosotros
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() => scrollDown(gallerySection, 70)}
+                >
+                  Galeria
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() => scrollDown(servicesSection, 50)}
+                >
+                  Servicios
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() => scrollDown(joinUsSection, -20)}
+                >
+                  Unete
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() => scrollDown(contactSection, 50)}
+                >
+                  Contacto
+                </Menu.Item>
               </Menu.Item>
             </Container>
           </Menu>
@@ -131,6 +174,22 @@ DesktopContainer.propTypes = {
 
 const MobileContainer = (props) => {
   const { children } = props;
+
+  const {
+    gallerySection,
+    servicesSection,
+    contactSection,
+    scrollDown,
+  } = useContext(RefContext);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+
   return (
     <Media as={Sidebar.Pushable} at="mobile" fixed="top">
       <Segment
@@ -149,12 +208,13 @@ const MobileContainer = (props) => {
             <Container>
               <Image
                 src="https://i.imgur.com/0K4iZGu.png"
+                onClick={goToTop}
                 style={{ maxHeight: "2.6em", margin: "0.5em" }}
               />
               <Menu.Item position="right" style={{ padding: "0px" }}>
-                <Menu.Item as="a">Galeria</Menu.Item>
-                <Menu.Item as="a">Servicios</Menu.Item>
-                <Menu.Item as="a">Contacto</Menu.Item>
+                <Menu.Item as="a" onClick={() => scrollDown(gallerySection, 70)}>Galeria</Menu.Item>
+                <Menu.Item as="a" onClick={() => scrollDown(servicesSection, 50)}>Servicios</Menu.Item>
+                <Menu.Item as="a" onClick={() => scrollDown(contactSection, 50)}>Contacto</Menu.Item>
               </Menu.Item>
             </Container>
           </Menu>
@@ -213,42 +273,42 @@ const HomepageLayout = () => {
     });
   };
 
-  const scrollDown = (ref, yValue) => {
-    window.scrollTo({
-      top: (ref.current.offsetTop-yValue),
-      behavior: 'smooth',
-    });
-  };
+  const {
+    aboutSection,
+    setAboutSection,
+    setGallerySection,
+    gallerySection,
+    contactSection,
+    setContactSection,
+    joinUsSection,
+    setJoinUsSection,
+    servicesSection,
+    setServicesSection,
+  } = useContext(RefContext);
 
-  
-  const aboutSection = useRef(null);
-  const gallerySection = useRef(null);
-  const servicesSection = useRef(null);
-  const joinUsSection = useRef(null);
-  const contactSection = useRef(null);
+  setGallerySection(useRef(null));
+  setContactSection(useRef(null));
+  setServicesSection(useRef(null));
+  setJoinUsSection(useRef(null));
+  setAboutSection(useRef(null));
 
   return (
     <ResponsiveContainer>
-    <button onClick={() => scrollDown(aboutSection, 20)}>about us</button>
-      <button onClick={() => scrollDown(gallerySection, 70)}>gallery</button>
-      <button onClick={() => scrollDown(servicesSection, 50)}>services</button>
-      <button onClick={() => scrollDown(joinUsSection, -20)}>join us</button>
-      <button onClick={() => scrollDown(contactSection, 50)}>contact</button>
-      <ScrollToTop/>
+      <ScrollToTop />
       <div ref={aboutSection}>
-      <AboutUs />
+        <AboutUs />
       </div>
       <div ref={gallerySection}>
-      <Gallery goToTop={goToTop}/>
+        <Gallery goToTop={goToTop} />
       </div>
       <div ref={servicesSection}>
-      <Services />
+        <Services />
       </div>
       <div ref={joinUsSection}>
-      <JoinUs />
+        <JoinUs />
       </div>
       <div ref={contactSection}>
-      <Contact />
+        <Contact />
       </div>
     </ResponsiveContainer>
   );

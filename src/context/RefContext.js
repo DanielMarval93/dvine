@@ -8,7 +8,7 @@ function Provider({ children }) {
   const [joinUsSection, setJoinUsSection] = useState(null);
   const [servicesSection, setServicesSection] = useState(null);
   const [aboutSection, setAboutSection] = useState(null);
-  
+
   const refs = {
     aboutSection,
     setAboutSection,
@@ -23,6 +23,12 @@ function Provider({ children }) {
     scrollDown: (ref, yValue) => {
       window.scrollTo({
         top: ref.current.offsetTop - yValue,
+        behavior: "smooth",
+      });
+    },
+    goToTop: () => {
+      window.scrollTo({
+        top: 0,
         behavior: "smooth",
       });
     },

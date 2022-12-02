@@ -46,7 +46,7 @@ const HomepageHeading = ({ mobile }) => (
       style={{
         margin: "auto",
         marginTop: mobile ? "8.6em" : "12.4em",
-        maxHeight: mobile ? "5em" : "20em",
+        maxHeight: mobile ? "4.5em" : "20em",
         maxWidth: "100%"
       }}
     />

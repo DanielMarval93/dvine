@@ -10,6 +10,7 @@ import "../style/App.css";
 import "../style/navbar.css";
 
 
+
 import {
   Container,
   Header,
@@ -210,6 +211,10 @@ ResponsiveContainer.propTypes = {
 
 const App = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Dvine Models';
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

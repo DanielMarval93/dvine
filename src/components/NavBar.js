@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <a  className="brand-name">
+      <a href="/"  className="brand-name">
         <img
           src="https://i.imgur.com/2tEjfCo.png"
           alt="Dvine Models"
@@ -53,26 +53,26 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a  onClick={() => {scrollDown(aboutSection, 20)
-          setIsNavExpanded(!isNavExpanded)}}>CONOCENOS</a>
+            <p  onClick={() => {scrollDown(aboutSection, 20)
+          setIsNavExpanded(!isNavExpanded)}}>CONOCENOS</p>
           </li>
           <li>
-            <a onClick={() => {scrollDown(gallerySection, 70)
-                 setIsNavExpanded(!isNavExpanded)}}>GALERIA</a>
+            <p onClick={() => {scrollDown(gallerySection, 70)
+                 setIsNavExpanded(!isNavExpanded)}}>GALERIA</p>
           </li>
           <li>
-            <a onClick={() => {scrollDown(servicesSection, 50)
-                 setIsNavExpanded(!isNavExpanded)}}>SERVICIOS</a>
+            <p onClick={() => {scrollDown(servicesSection, 50)
+                 setIsNavExpanded(!isNavExpanded)}}>SERVICIOS</p>
           </li>
           <li>
-            <a onClick={() => {scrollDown(joinUsSection, -20)
-                 setIsNavExpanded(!isNavExpanded)}}>UNETE</a>
+            <p onClick={() => {scrollDown(joinUsSection, -20)
+                 setIsNavExpanded(!isNavExpanded)}}>UNETE</p>
           </li>
           <li>
-            <a onClick={() => {scrollDown(contactSection, 50)
-                 setIsNavExpanded(!isNavExpanded)}}>CONTACTO</a>
+            <p onClick={() => {scrollDown(contactSection, 50)
+                 setIsNavExpanded(!isNavExpanded)}}>CONTACTO</p>
           </li>
-          <li><a></a></li>
+          <li><p></p></li>
         </ul>
       </div>
     </nav>

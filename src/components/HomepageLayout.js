@@ -36,7 +36,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Image
       className="logo"
-      src="https://i.imgur.com/2tEjfCo.png"
+      src="https://i.imgur.com/kL8oZz6.png"
       style={{
         margin: "auto",
         marginTop: mobile ? "8.6em" : "12.4em",

@@ -54,7 +54,7 @@ export default function Navbar() {
         <ul>
           <li>
             <p  onClick={() => {scrollDown(aboutSection, 20)
-          setIsNavExpanded(!isNavExpanded)}}>CONOCENOS</p>
+          setIsNavExpanded(!isNavExpanded)}}>CONÓCENOS</p>
           </li>
           <li>
             <p onClick={() => {scrollDown(gallerySection, 70)
@@ -66,7 +66,7 @@ export default function Navbar() {
           </li>
           <li>
             <p onClick={() => {scrollDown(joinUsSection, -20)
-                 setIsNavExpanded(!isNavExpanded)}}>UNETE</p>
+                 setIsNavExpanded(!isNavExpanded)}}>ÚNETE</p>
           </li>
           <li>
             <p onClick={() => {scrollDown(contactSection, 50)

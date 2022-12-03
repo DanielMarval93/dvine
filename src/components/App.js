@@ -132,7 +132,7 @@ const DesktopContainer = (props) => {
                   as="a"
                   onClick={() => scrollDown(aboutSection, 20)}
                 >
-                  Conocenos
+                  Conócenos
                 </Menu.Item>
                 <Menu.Item
                   as="a"
@@ -150,7 +150,7 @@ const DesktopContainer = (props) => {
                   as="a"
                   onClick={() => scrollDown(joinUsSection, -20)}
                 >
-                  Unete
+                  Únete
                 </Menu.Item>
                 <Menu.Item
                   as="a"

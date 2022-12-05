@@ -58,7 +58,7 @@ export default function Navbar() {
           </li>
           <li>
             <p onClick={() => {scrollDown(gallerySection, 70)
-                 setIsNavExpanded(!isNavExpanded)}}>GALERIA</p>
+                 setIsNavExpanded(!isNavExpanded)}}>GALERÍA</p>
           </li>
           <li>
             <p onClick={() => {scrollDown(servicesSection, 50)

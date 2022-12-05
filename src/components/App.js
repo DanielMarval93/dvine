@@ -138,7 +138,7 @@ const DesktopContainer = (props) => {
                   as="a"
                   onClick={() => scrollDown(gallerySection, 70)}
                 >
-                  Galeria
+                  Galería
                 </Menu.Item>
                 <Menu.Item
                   as="a"

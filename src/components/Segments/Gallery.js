@@ -10,7 +10,7 @@ const Gallery = () => {
           horizontal
           style={{ margin: "0em 0em 0.5em", textTransform: "uppercase" }}
         >
-          <p>Galeria</p>
+          <p>Galería</p>
         </Divider>
         <Grid celled="internally" columns="equal" centered stackable>
           <Grid.Row textAlign="center" >

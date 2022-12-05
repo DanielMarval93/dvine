@@ -11,7 +11,7 @@ const JoinUs = () => {
             horizontal
             style={{ margin: "3.5em 0em 1em", textTransform: "uppercase" }}
           >
-            <p>Unete a Nosotros</p>
+            <p>Únete a Nosotros</p>
           </Divider>
 
           <Header

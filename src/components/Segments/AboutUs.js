@@ -10,7 +10,7 @@ const AboutUs = () => {
           horizontal
           style={{ margin: "0em 0em 1em", textTransform: "uppercase" }}
         >
-          <p>A cerca de nosotros</p>
+          <p>Acerca de nosotros</p>
         </Divider>
         <Grid container centered stackable verticalAlign="middle">
         <Grid.Row>

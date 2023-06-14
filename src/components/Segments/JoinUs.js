@@ -33,7 +33,7 @@ const JoinUs = () => {
             }}
           >
             Buscamos perfil entre 18 y 50 años sin importar nacionalidad.
-            Modelos comprometidas y con ganas de ganar ingresos altos.
+            Modelos comprometidas y con ganas de generar ingresos altos.
           </p>
         </Container>
       </Segment>

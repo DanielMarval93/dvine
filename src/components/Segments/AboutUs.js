@@ -13,7 +13,7 @@ const AboutUs = () => {
           <p>Acerca de nosotros</p>
         </Divider>
         <Grid container centered stackable verticalAlign="middle">
-        <Grid.Row>
+          <Grid.Row>
             <Grid.Column width={12}>
               <Image
                 className="aboutUsImage"
@@ -44,15 +44,16 @@ const AboutUs = () => {
                   textAlign: "justify",
                 }}
               >
-                Dvine models es una agencia de representación de modelos en
-                plataformas de contenido para adultos como Only fans. Nos
-                esforzamos para hacer crecer tu audiencia y así obtener el
-                máximo de resultados. Utilizando nuestros conocimientos,
-                experiencia y contactos, generamos tráfico online, gestionamos
-                las cuentas y la marca personal de cada modelo.
+                Dvine models es una agencia de markedting y publicidad para
+                modelos que trabajan en plataformas de contenido para adultos
+                como Only fans. Nos esforzamos para hacer crecer tu audiencia y
+                así obtener el máximo de resultados. Utilizando nuestros
+                conocimientos, experiencia y contactos, generamos tráfico
+                online, gestionamos las cuentas y la marca personal de cada
+                modelo.
               </p>
             </Grid.Column>
-          
+
             <Grid.Column width={8}>
               <Header
                 as="h3"
@@ -74,11 +75,10 @@ const AboutUs = () => {
                 }}
               >
                 Nos encargamos de la creación, gestión y promoción de la cuenta
-                para que tu solamente tengas que crear el contenido con nuestro
-                asesoramiento. Contamos con un equipo profesional, canales
-                propios de difusión y múltiples casos de éxito. Deja que Dvine
-                models haga todo el trabajo por ti y empieza a vivir de los
-                ingresos generados.
+                y la marca personal de cada modelo. Contamos con un equipo
+                profesional, canales propios de difusión y múltiples casos de
+                éxito. Deja que Dvine models haga todo el trabajo por ti y
+                empieza a vivir de los ingresos generado
               </p>
             </Grid.Column>
           </Grid.Row>

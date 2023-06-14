@@ -64,8 +64,7 @@ const AboutUs = () => {
                   color: "rgba(207, 160, 18, 1)",
                 }}
               >
-                Te damos la posibilidad de que solo tengas que crear el
-                contenido
+                Haz crecer tu alcance y llega a tu público objetivo
               </Header>
               <p
                 style={{
